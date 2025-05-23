@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>weather dashboard</title>
+</head>
+<body>
+    <div id="dashboard">
+
+        <h1>WEATHER DASHBOARD</h1>
+        <input type="text" id="cityInput" placeholder="Enter a city"/>
+        <button id="searchButton">🔍</button>
+
+        <p id="lastCityText">
+            Last searched city: <span id="lastCityName"></span>
+        </p>
+
+        <div id="loading" style="display: none;">
+            <p>Loading...</p>
+            <div class="spinner"></div>
+        </div>
+        
+        <div id="weatherResult"></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

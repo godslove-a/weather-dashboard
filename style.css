@@ -1,0 +1,107 @@
+body {
+    background-image: url('sunny.jpeg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+    transition: background-color 0.1s ease;
+  }
+
+#dashboard {
+    background-color: rgba(189, 169, 208, 0.521);
+    width: 60%; 
+    height: 600px; 
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.464); /* Shadow underneath */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(2, 5, 37);
+  margin-bottom: 20px;
+}
+
+#weatherResult p {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: rgb(34, 34, 34);
+}
+
+#weatherResult h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+#cityInput {
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 15px;
+    border: 1px solid rgb(247, 242, 235);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+#searchButton {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#searchButton:hover {
+    background-color: rgba(145, 193, 208, 0.477);
+}
+
+#lastCityText {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#lastCityName {
+    font-weight: bold;
+}
+
+#loading {
+    font-size: 1.2rem;
+    color: rgb(64, 64, 64);
+    font-style: italic;
+    margin-top: 15px;
+}
+  
+#weatherResult {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.spinner {
+    border: 6px solid rgba(251, 205, 233, 0.848);
+    border-top: 6px solid #0b0109af;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 5s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
